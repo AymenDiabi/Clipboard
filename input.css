@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   background-image: url('../images/bg-header-desktop.png');
   background-repeat: no-repeat;
@@ -12,4 +13,16 @@ body {
   body {
     background-image: url('../images/bg-header-mobile.png');
   }
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto text-center;
+}
+
+h3 {
+  @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+}
+
+.button-container {
+  @apply flex flex-col md:flex-row justify-center w-full space-y-6 text-xl text-white md:space-y-0 md:space-x-4;
 }
